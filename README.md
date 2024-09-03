@@ -121,7 +121,9 @@ Below is a snapshot of the web application's interface, showcasing the user-frie
 ![Web Application](app_screenshots/Web_Application.png)
 
 #### Example Classification Result:
-![Web Application](app_screenshots/Web_Application_Result.png)
+![Web Application](app_screenshots/Result.png)
+![Web Application](app_screenshots/Result_1.png)
+![Web Application](app_screenshots/Result_2.png)
 
 ### Visualizations
 
