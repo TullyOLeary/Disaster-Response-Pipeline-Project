@@ -48,7 +48,11 @@ def clean_data(df):
 
     # Convert category values to just numbers 0 or 1
     for column in categories:
-        categories[column] = categories[column].apply(lambda x: x.split('-')[1]).astype(int)
+        categories[column] = categories[column].apply(lambda x: int(x.split('-')[1]))
+        
+        # Specifically convert 'related' values of 2 to 1
+        if column == 'related':
+            categories[column] = categories[column].replace(2, 1)
 
     # Replace categories column in df with new category columns
     df = df.drop('categories', axis=1)
